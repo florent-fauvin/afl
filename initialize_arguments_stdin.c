@@ -89,7 +89,6 @@ int countArguments (char ** stringp, char * delim) {
 	free(string);
 
 	return i;
-
 }
 
 /* ---------------------------------------------------------------------------------- */
@@ -107,6 +106,8 @@ int displayArrayOfStrings (char ** array, int length) {
 	for(i=0;i<length; i=i+1) {
 		printf(",%s,\n",*(array+i));
 	}
+	
+	return 0;
 }
 
 /* ---------------------------------------------------------------------------------- */
