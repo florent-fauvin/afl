@@ -11,7 +11,6 @@
 int main(int argc, char **argv){
 	
 	int nArguments = 2; 		/* Number of Arguments for myfunc */
-
 	char ** arguments = NULL;	/* Arguments to give to myfunc function */
         FILE* fp;			/* Stream of the input file where are written arguments to extract */
 
