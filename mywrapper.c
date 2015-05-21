@@ -12,13 +12,10 @@ void main(int argc, char **argv){
 	/* CALL : mywrapper -f /path/input/input.txt */
 	/* CALL BY AFL-FUZZ : /path/afl-fuzz -i /path/input -o /path/output/ -- /path/mywrapper -f @@ */
 
-	int a;
-	char* s; 
-	
 	// Reading "a" and "s" from input.txt
 	// ???
 
-	myfunc(a, s);
+	myfunc(a, s); // int myfunc (int a, char* s);
 	/* myfunc is WRAPPED and CALLED */
 	
 }
