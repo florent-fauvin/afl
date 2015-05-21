@@ -23,7 +23,7 @@ int main(int argc, char **argv){
 	
 	/* Each argument of myfunc, is written in each line of the input.txt file, 
 	 * and will be written in the arguments array :
-	 arguments[0] = 1rst line , arguments[1] = 2nd line, etc. */
+	 * arguments[0] = 1rst line , arguments[1] = 2nd line, etc. */
 	arguments = malloc(nArguments*sizeof(char*));
 	if ( extractArgumentsFromInputFile(arguments, nArguments, fp) != nArguments)
 		exit(1);
