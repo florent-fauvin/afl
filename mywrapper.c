@@ -28,7 +28,7 @@ int main(int argc, char **argv){
 	if ( extractArgumentsFromInputFile(arguments, nArguments, fp) != nArguments)
 		exit(1);
 
-	/* Prototype of myfunc : int myfunc (int a, char* s)*/
+	/* Prototype of myfunc : int myfunc (int a, char* s) */
 	int a = (int) strtod(arguments[0],NULL);
 	char* s = arguments[1];
 	/* myfunc is WRAPPED and IS NOW CALLING */
